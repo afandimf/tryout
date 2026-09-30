@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFANDi MF Latsol - Pengetahuan Kuantitatif</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0b192c',
+                            800: '#1e3e62',
+                            700: '#2c4e75',
+                            600: '#3a5e88'
+                        },
+                        accent: {
+                            gold: '#f39c12',
+                            cyan: '#008dda',
+                            cyanHover: '#0073b3'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- MathJax for rendering math formulas -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b192c;
+            color: #f1f5f9;
+        }
+        .modal-blur {
+            backdrop-filter: blur(8px);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b192c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e3e62;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #008dda;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-accent-cyan selection:text-white">
+
+  
+<header class="bg-[#1e293b]/95 backdrop-blur border-b border-slate-700/60 sticky top-0 z-50 py-3 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        
+        
+        <div class="flex items-center gap-3 w-full md:w-auto justify-between md:justify-start">
+            <div class="flex items-center gap-3">
+                
+                <img src="https://yt3.googleusercontent.com/PBfptxG4MnwvQBmOAyiKf5H9-ckIaAf41zory-3Nv95XyvoOAq8eajvQMrykN6ZGk8WT0h56Vg=s160-c-k-c0x00ffffff-no-rj" alt="Logo Channel YT" class="w-10 h-10 rounded-xl object-cover bg-slate-800 border border-slate-700 shadow-md">
+                
+                <div>
+                    <div class="flex items-center gap-2">
+                        <h1 class="text-lg font-bold text-white tracking-wide">AFANDi MF</h1>
+                        
+                        
+                        <a href="https://discord.gg/BncDpkqqU" target="_blank" title="Join Discord Community" class="text-indigo-400 hover:text-indigo-300 bg-indigo-500/10 hover:bg-indigo-500/20 p-1.5 rounded-lg transition border border-indigo-500/20 flex items-center justify-center">
+                            <i class="fa-brands fa-discord text-base"></i>
+                        </a>
+                    </div>
+                    <p class="text-xs text-slate-400">Klik Logo Discord buat join Community PTN 27</p>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="flex items-center gap-3 bg-slate-900/60 border border-slate-700/70 px-4 py-2 rounded-xl text-xs sm:text-sm">
+            <span class="text-slate-300">
+                Mau les PK & PM Private / Umum murah? 
+            </span>
+            
+            
+            <a href="https://www.youtube.com/@afandii26" target="_blank" class="bg-cyan-600 hover:bg-cyan-500 text-white font-semibold px-3 py-1.5 rounded-lg transition shadow-md flex items-center gap-1.5 whitespace-nowrap">
+                <span>Kepoin Website</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+        </div>
+
+    </div>
+</header>
+
+   <!-- Main Content Container -->
+<main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <!-- Module Selection Menu View -->
+    <div id="moduleMenuView" class="space-y-8 py-4">
+        
+        <!-- Hero Banner -->
+        <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 p-6 sm:p-10 border border-slate-700 shadow-2xl">
+            <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="relative z-10 max-w-3xl">
+                <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-xs font-semibold tracking-wide uppercase border border-cyan-500/30">
+                    Subtest Pengetahuan Kuantitatif
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-3 leading-tight">
+                    Jadi di web ini akan ada 2 paket soal PK guys, satunya PK soal asli SNBT 2024 sama PK SNBT 2025 MMA
+                </h2>
+                <p class="text-slate-300 mt-3 text-sm sm:text-base leading-relaxed">
+                    Kalian bisa klik mau yang mana dibawah ini yaa. Dan inget ya guys, karena ini web <strong><em>ga ber server, jadi ga akan bisa save progress kalian, sekali mencet kalau kalian keluar, maka langsung ulang lagi dari awal secara otomatis :D</em></strong> nanti kalianjuga bisa seolah olah kaya Tryout PK gitu guys ada indikator timernya, dan kalian bisa check video pembahasannya ada di kanan atas otomatis nanti bakal muncul videonya. Bisa kalian kerjain satu satu, bisa juga kerjain dulu semuanya buat tau skor kalian berapa persentase benernya. Semangat guys sorry kalau webnya ada kurangnya, ini bikinnya juga<strong><em> di bantu ai soalnya (jujur)</em></strong> hehe. Selamat mengerjakan, jangan lupa follow X <a href="https://x.com/afandi1920" target="_blank" class="text-cyan-400 font-bold hover:underline">@afandi1920</a> and Yt <a href="https://youtube.com/@afandii26" target="_blank" class="text-cyan-400 font-bold hover:underline">@afandii26</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Module Grid Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+            
+            <!-- Module 2024 -->
+            <div class="bg-slate-800/90 hover:bg-slate-800 transition-all border border-slate-700 hover:border-cyan-500 rounded-2xl p-6 shadow-xl flex flex-col justify-between group w-full">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        
+                        
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYBBAcCA//EAC8QAAEEAgADBgQHAQAAAAAAAAEAAgMEBREGEiETMTJBUWEUImKBFSNCUnFykYL/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAHBEBAQEBAQEAAwAAAAAAAAAAAAERAhIhIjFB/9oADAMBAAIRAxEAPwDuKIiAiIgIiICIiAiIgIiICIiAiIgLG/dHHQVPhB4js2b1jIWauOE3w9BsE3Zdo4dHP+rbtgDu6KyazesXEHfcig+GL880M9DIP5r9GTspna12je9j9e7dffanEsy4suzRERRRERAREQF8554q8TpZ5GRxtG3Pe4ANHqSV9FWOJ2xT53EQZHrjgyeZ7XeBz2NBHN7Acx6qybU6uR7zWTGWxpp8PWobE9iRsMksMjXfDxu8Tz19N69yFFW8Z+M2nYvGSOr0cLEGQub3G1r5ev0jW/dy0hO/LyiWDHx4/Jdm63iJo28hnjafA/1JHl6O/wBtnCppSYWKfHRlkc73yva4kuEjnEvBJ67Dtj+Aul3ifHKfnfqHrWp7UuOz9aE/ENd8FlK40C0A9Sd93K7r/Uqfo8QYbIWHVqGUpWZ273HDO17unsCqbxKzHWc3kK0j3RYemwXs65ryGyvDR2cP3A5nAd/T1UTkLcV3h7JNtYSDEZnH147+KbWjAkEZ1yaI8+b5XDu6q+PTU2OtovEJeYYzKNPLRzD0Pmva4ugiIgIiICrPFLzk7dTh+F3Wz+bbcP0Vweo/6Py/6p69bgo1J7duQRwQRukkef0tA2SuetsZCLFSZGNpi4i4pnEVMEbNWDXyk+zGczz9Tlvif1jr7MbGeu3bF+dlXH3GOoSx/hjo6bi0ubsP2f2uB5degBX1tZpvDEli8yBz6mTYZIq8bg4su+ExdOm3HX3BUs7hATM7O3n87NGfGz40sDvYloB191qR8L5LCTTM4WuU4aEzu0+EuwukEEmgOaMg7663o+e+q3Ouf0z5u6hsfh5LV2rw7YeJnRSDKZ+bymsOPNHCfbejr9rG+q9z3L1jHszEsbXZ/hqw+HIRRt18RAfHoejmcsjfcaVw4bwjMLSla6d1m3ZldPatPbp0sjvPXkANADyACh+JWjAcQVOI2jVOxy0smPIMJ/LlI+lx5SfR3snv1WsxaaVqG7VhtVpBJBNGJI3juc0jYK+6qHCRODy13heU/kM5rWMJPfXc75ox/Rx1/BarcOoXLqZWpdZREUUREQVfjzF5bM0a1LGR1JKxnbJcjszOjErGkER7DT0JHX2HuvWEwuSdl35viGSqbgi7CtWqFxirR72SC4Auc7ps6HQaVl0srXq5iZ91hZRFlRauSowZKjPStsD688ZjkafMELaRBzqzw9xhE7FRwSYu27Eyg1b0tiSOaSLl5SyVvIR1b0JB7wCuiN8ITQWVq9akmCIiyoiIgIiICIiAiIgIiICIiD//2Q==" alt="Logo 2024" class="w-12 h-12 object-contain rounded-xl bg-slate-900/60 p-1 border border-slate-700 group-hover:scale-105 transition-transform">
+                        
+                        <span class="px-3 py-1 bg-slate-900 text-xs font-medium text-slate-300 rounded-full border border-slate-700">
+                            20 Soal Lengkap
+                        </span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                        PK ASLI SNBT 2024
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Kumpulan soal asli PK SNBT 2024 mencakup analisis grafik, geometri koordinat, matriks/sistem linear, flowchart algoritma, dan perbandingan kuantitas P & Q.
+                    </p>
+                </div>
+                
+                <button onclick="startQuiz('2024')" class="w-full py-3 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-play text-sm"></i>
+                    <span>Mulai Latihan 2024</span>
+                </button>
+            </div>
+
+            <!-- Module 2025 -->
+            <div class="bg-slate-800/90 hover:bg-slate-800 transition-all border border-slate-700 hover:border-amber-500 rounded-2xl p-6 shadow-xl flex flex-col justify-between group w-full">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                       
+                        <img src="https://ugc.production.linktr.ee/d704340b-f34f-48c5-a117-0da16872ec64_Logo1.png?io=true&size=avatar-v3_0" alt="Logo 2025" class="w-12 h-12 object-contain rounded-xl bg-slate-900/60 p-1 border border-slate-700 group-hover:scale-105 transition-transform">
+                        
+                        <span class="px-3 py-1 bg-slate-900 text-xs font-medium text-slate-300 rounded-full border border-slate-700">
+                            20 Soal Lengkap
+                        </span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
+                        PK MMA SNBT 2025
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        20 Soal Asli PK SNBT 2025 terbaru mencakup hitungan pecahan/akar, kalkulus fungsi, geometri ruang prisma, trigonometri, & deret aritmatika.
+                    </p>
+                </div>
+                
+                <button onclick="startQuiz('2025')" class="w-full py-3 bg-amber-600 hover:bg-amber-500 text-white font-semibold rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-play text-sm"></i>
+                    <span>Mulai Latihan 2025</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+        <!-- Quiz View (Hidden initially) -->
+        <div id="quizView" class="hidden grid grid-cols-1 lg:grid-cols-4 gap-6">
+            
+            <!-- Left Side: Question Display Area (3 cols) -->
+            <div class="lg:col-span-3 space-y-6">
+                <!-- Question Card -->
+                <div class="bg-navy-800 border border-navy-700 rounded-2xl p-6 shadow-2xl relative">
+                    <!-- Top Bar in Card -->
+                    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-navy-700 pb-4 mb-4">
+                        <span id="questionNumberBadge" class="px-3 py-1 bg-accent-cyan/20 text-accent-cyan font-semibold text-sm rounded-lg border border-accent-cyan/30">
+                            Soal Nomor 1 / 20
+                        </span>
+                        <div class="flex items-center space-x-2">
+                            <span id="moduleTag" class="text-xs text-slate-400 bg-navy-900 px-2.5 py-1 rounded border border-navy-700 font-medium">
+                                PK SNBT 2024 DAN 2025
+                            </span>
+                           
+                            <button onclick="openVideoModal()" class="px-3 py-1 bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white text-xs font-bold rounded-lg shadow transition-all flex items-center gap-1.5">
+                                <i class="fa-solid fa-circle-play text-accent-gold"></i>
+                                <span>Lihat Pembahasan Video</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Question Text & SVGs -->
+                    <div id="questionContainer" class="text-slate-100 text-base sm:text-lg leading-relaxed space-y-4 mb-6 min-h-[120px]">
+                        <!-- Dynamic Question Content -->
+                    </div>
+
+                    <!-- Interactive Options / Input Area -->
+                    <div id="optionsContainer" class="space-y-3">
+                        <!-- Dynamic Answer Inputs -->
+                    </div>
+
+                    <!-- Answer Feedback Banner -->
+                    <div id="feedbackBanner" class="hidden mt-6 p-4 rounded-xl border flex items-start gap-3">
+                        <!-- Dynamic Feedback Content -->
+                    </div>
+                </div>
+
+                <!-- Navigation Action Buttons -->
+                <div class="flex items-center justify-between bg-navy-800 border border-navy-700 rounded-xl p-4 shadow-lg">
+                    <button id="prevBtn" onclick="navigateQuestion(-1)" class="px-4 py-2 bg-navy-700 hover:bg-navy-600 text-white font-medium rounded-lg text-sm transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>Sebelumnya</span>
+                    </button>
+                    
+                    <button id="checkAnswerBtn" onclick="checkCurrentAnswer()" class="px-5 py-2 bg-accent-gold hover:bg-amber-600 text-white font-semibold rounded-lg text-sm shadow transition-colors flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Cek Jawaban</span>
+                    </button>
+
+                    <button id="nextBtn" onclick="navigateQuestion(1)" class="px-4 py-2 bg-accent-cyan hover:bg-accent-cyanHover text-white font-medium rounded-lg text-sm transition-colors flex items-center gap-2">
+                        <span>Selanjutnya</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Side: Question Navigation Drawer (1 col) -->
+            <div class="space-y-6">
+                <div class="bg-navy-800 border border-navy-700 rounded-2xl p-5 shadow-xl">
+                    <h4 class="font-bold text-white mb-4 text-base flex items-center gap-2">
+                        <i class="fa-solid fa-th-large text-accent-cyan"></i>
+                        <span>Navigasi Soal</span>
+                    </h4>
+
+                    <!-- Question Grid -->
+                    <div id="questionGrid" class="grid grid-cols-5 gap-2">
+                        <!-- Dynamic Buttons 1 to 20 -->
+                    </div>
+
+                    <!-- Legend -->
+                    <div class="mt-6 pt-4 border-t border-navy-700 space-y-2 text-xs text-slate-300">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3.5 h-3.5 rounded bg-accent-cyan inline-block"></span>
+                            <span>Sedang Dikerjakan</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-3.5 h-3.5 rounded bg-emerald-600 inline-block"></span>
+                            <span>Sudah Dijawab Benar</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-3.5 h-3.5 rounded bg-rose-600 inline-block"></span>
+                            <span>Sudah Dijawab Salah</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-3.5 h-3.5 rounded bg-navy-900 border border-navy-600 inline-block"></span>
+                            <span>Belum Dijawab</span>
+                        </div>
+                    </div>
+
+                    <!-- Finish Quiz Button -->
+                    <button onclick="finishQuiz()" class="w-full mt-6 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-xl text-sm shadow transition-colors flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                        <span>Selesai & Lihat Skor</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Modal Pembahasan Video & Text -->
+    <div id="videoModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/70 modal-blur">
+        <div class="bg-navy-800 border border-navy-600 rounded-2xl w-full max-w-3xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+            <!-- Modal Header -->
+            <div class="px-6 py-4 bg-navy-900 border-b border-navy-700 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-video text-rose-500 text-lg"></i>
+                    <h3 class="font-bold text-white text-lg">Pembahasan Video & Solusi Teks</h3>
+                </div>
+                <button onclick="closeVideoModal()" class="text-slate-400 hover:text-white transition-colors text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="p-6 overflow-y-auto space-y-6">
+                <!-- Video Container -->
+                <div class="space-y-2">
+                    <div id="videoPlayerContainer" class="aspect-video w-full bg-black rounded-xl overflow-hidden border border-navy-700 flex items-center justify-center relative">
+                        <!-- Dynamic Video Embed or Placeholder -->
+                    </div>
+                    
+                    <!-- Editable Link Bar for Teachers/Users -->
+                    <div class="flex items-center gap-2 bg-navy-900 p-2 rounded-lg border border-navy-700 text-xs text-slate-300">
+                        <i class="fa-solid fa-link text-accent-cyan"></i>
+                        <span class="whitespace-nowrap font-semibold">URL Video Pembahasan:</span>
+                        <input id="videoUrlInput" type="text" placeholder="Masukkan URL YouTube (cth: https://www.youtube.com/embed/xyz...)" class="flex-grow bg-navy-800 border border-navy-600 rounded px-2 py-1 text-white focus:outline-none focus:border-accent-cyan text-xs">
+                        <button onclick="updateVideoUrl()" class="px-3 py-1 bg-accent-cyan hover:bg-accent-cyanHover text-white rounded font-medium transition-colors">
+                            Simpan
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Text Pembahasan Step-by-Step -->
+                <div class="bg-navy-900/90 border border-navy-700 rounded-xl p-5 space-y-3">
+                    <h4 class="font-bold text-accent-gold text-base flex items-center gap-2 border-b border-navy-700 pb-2">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <span>Penjelasan Langkah Demi Langkah</span>
+                    </h4>
+                    <div id="textPembahasanContent" class="text-slate-200 text-sm leading-relaxed space-y-2">
+                        <!-- Dynamic Text Pembahasan -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="px-6 py-3 bg-navy-900 border-t border-navy-700 flex justify-end">
+                <button onclick="closeVideoModal()" class="px-4 py-2 bg-navy-700 hover:bg-navy-600 text-white rounded-lg text-sm font-medium transition-colors">
+                    Tutup Pembahasan
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Result Modal -->
+    <div id="resultModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 modal-blur">
+        <div class="bg-navy-800 border border-navy-600 rounded-2xl w-full max-w-md p-6 text-center shadow-2xl space-y-6">
+            <div class="w-20 h-20 bg-accent-gold/20 text-accent-gold border-2 border-accent-gold/40 rounded-full flex items-center justify-center mx-auto text-3xl">
+                <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div>
+                <h3 class="text-2xl font-extrabold text-white">Hasil Latihan Anda</h3>
+                <p id="resultModuleTitle" class="text-slate-400 text-sm mt-1">PK SNBT 2024</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 bg-navy-900 p-4 rounded-xl border border-navy-700">
+                <div>
+                    <span class="block text-xs text-slate-400">Jawaban Benar</span>
+                    <span id="correctScoreText" class="text-2xl font-black text-emerald-400">0 / 20</span>
+                </div>
+                <div>
+                    <span class="block text-xs text-slate-400">Nilai Akhir</span>
+                    <span id="finalScorePercent" class="text-2xl font-black text-accent-cyan">0%</span>
+                </div>
+            </div>
+
+            <div class="flex gap-3">
+                <button onclick="closeResultModal()" class="flex-1 py-2.5 bg-navy-700 hover:bg-navy-600 text-white rounded-xl text-sm font-semibold transition-colors">
+                    Review Soal
+                </button>
+                <button onclick="showModuleMenu(); closeResultModal();" class="flex-1 py-2.5 bg-accent-cyan hover:bg-accent-cyanHover text-white rounded-xl text-sm font-semibold transition-colors">
+                    Menu Utama
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 border-t border-navy-800 py-4 mt-8">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-400">
+            &copy; AFANDi MF - Modul Latihan Soal PK SNBT 2024 & 2025. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Comprehensive Question Database
+        const quizData = {
+            '2024': [
+                {
+                    id: 1,
+                    type: 'mcq',
+                    question: 'Urutan tiga bilangan $0{,}4444$, $44{,}444\\%$, dan $\\frac{2}{3} \\times \\frac{2}{3}$ dari yang terbesar ke yang terkecil adalah...',
+                    options: [
+                        '$\\frac{2}{3}\\times\\frac{2}{3}$; $0{,}4444$; $44{,}444\\%$',
+                        '$\\frac{2}{3}\\times\\frac{2}{3}$; $44{,}444\\%$; $0{,}4444$',
+                        '$0{,}4444$; $44{,}444\\%$; $\\frac{2}{3}\\times\\frac{2}{3}$',
+                        '$0{,}4444$; $\\frac{2}{3}\\times\\frac{2}{3}$; $44{,}444\\%$',
+                        '$44{,}444\\%$; $0{,}4444$; $\\frac{2}{3}\\times\\frac{2}{3}$'
+                    ],
+                    correctAnswer: 1,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=30',
+                    explanation: 'Ubah semua bilangan ke bentuk desimal:<br>1. $0{,}4444$<br>2. $44{,}444\\% = \\frac{44{,}444}{100} = 0{,}44444$<br>3. $\\frac{2}{3} \\times \\frac{2}{3} = \\frac{4}{9} \\approx 0{,}444444...$<br>Urutan dari terbesar ke terkecil: $\\frac{4}{9} > 44{,}444\\% > 0{,}4444$. Maka urutannya adalah $\\frac{2}{3}\\times\\frac{2}{3}$; $44{,}444\\%$; $0{,}4444$ atau $\\frac{2}{3}\\times\\frac{2}{3}$; $0{,}4444$; $44{,}444\\%$ tergantung nilai desimal presisi. Nilai paling besar adalah $\\frac{4}{9}$.'
+                },
+                {
+                    id: 2,
+                    type: 'mcq',
+                    svg: `<svg viewBox="0 0 350 200" class="w-full max-w-sm mx-auto my-2 rounded bg-navy-900 border border-navy-700">
+                        <line x1="20" y1="180" x2="330" y2="180" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+                        <line x1="50" y1="190" x2="50" y2="20" stroke="#94a3b8" stroke-width="2"/>
+                        <line x1="30" y1="20" x2="320" y2="190" stroke="#008dda" stroke-width="3"/>
+                        <circle cx="140" cy="115" r="4" fill="#f39c12"/>
+                        <text x="110" y="130" fill="#f1f5f9" font-size="12">A(2,3)</text>
+                        <line x1="140" y1="115" x2="140" y2="82" stroke="#f1f5f9" stroke-dasharray="3,3"/>
+                        <text x="125" y="100" fill="#f39c12" font-size="12">2</text>
+                        <circle cx="260" cy="50" r="4" fill="#f39c12"/>
+                        <text x="240" y="45" fill="#f1f5f9" font-size="12">B(5,4)</text>
+                        <line x1="260" y1="50" x2="260" y2="155" stroke="#f1f5f9" stroke-dasharray="3,3"/>
+                        <text x="270" y="105" fill="#f39c12" font-size="12">3</text>
+                    </svg>`,
+                    question: 'Jarak vertikal sembarang titik $(x_0, y_0)$ ke garis $l: y = ax + b$ didefinisikan sebagai $|y_0 - (ax_0 + b)|$. Jumlah jarak vertikal titik $(0,0)$, $(3,3)$, dan $(-6,-6)$ ke garis $m: y = \\frac{1}{3}x + 1$ adalah...',
+                    options: ['1', '3', '5', '7', '9'],
+                    correctAnswer: 3,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=492',
+                    explanation: 'Rumus jarak vertikal: $d = |y_0 - (\\frac{1}{3}x_0 + 1)|$.<br>- Untuk $(0,0)$: $d_1 = |0 - (0 + 1)| = 1$<br>- Untuk $(3,3)$: $d_2 = |3 - (1 + 1)| = |3 - 2| = 1$<br>- Untuk $(-6,-6)$: $d_3 = |-6 - (-2 + 1)| = |-6 - (-1)| = |-5| = 5$<br>Jumlah total jarak vertikal $= 1 + 1 + 5 = 7$. (Catatan: $d_3 = |-6 - (-1)| = 5$). Total $= 1 + 1 + 5 = 7$.'
+                },
+                {
+                    id: 3,
+                    type: 'mcq',
+                    question: 'Sistem persamaan linear:<br>$\\begin{cases} x + 2y - 3z = k \\\\ 2y - 3z = -3 \\\\ 3x - z = 2 \\end{cases}$<br>memiliki solusi $x=a, y=b, z=c$. Manakah pernyataan yang benar?<br>(1) $c=4$ jika $k=-1$<br>(2) $c=3a-2$<br>(3) $a=k+3$<br>(4) $a+2b=k+3c$',
+                    options: [
+                        '(1), (2), dan (3)',
+                        '(1) dan (3)',
+                        '(2) dan (4)',
+                        '(4) saja',
+                        '(1), (2), (3), dan (4)'
+                    ],
+                    correctAnswer: 4,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=1070',
+                    explanation: 'Substitusi pers (2) ke (1): $x + (-3) = k \\implies x = k+3 \\implies a = k+3$ (Pernyataan 3 BENAR).<br>Dari pers (3): $3x - z = 2 \\implies z = 3x - 2 \\implies c = 3a - 2$ (Pernyataan 2 BENAR).<br>Jika $k=-1$, maka $a = -1+3 = 2$, sehingga $c = 3(2)-2 = 4$ (Pernyataan 1 BENAR).<br>Dari pers (1): $a + 2b - 3c = k \\implies a + 2b = k + 3c$ (Pernyataan 4 BENAR).<br>Semua pernyataan (1), (2), (3), dan (4) bernilai benar.'
+                },
+                {
+                    id: 4,
+                    type: 'mcq',
+                    question: 'Daerah D bidang Cartesius adalah himpunan semua solusi dari sistem pertidaksamaan linear:<br>$x + y \\ge 2$<br>$2x - y \\le 3$<br>$y \\ge 2$<br>Pernyataan mana saja yang benar?<br>(1) Daerah D terbatas<br>(2) Seluruh daerah D terletak di kuadran IV<br>(3) Titik (-1,-2) terletak di daerah D<br>(4) Garis $x=2$ memotong daerah D',
+                    options: [
+                        '(1), (2), dan (3)',
+                        '(1) dan (3)',
+                        '(2) dan (4)',
+                        '(4) saja',
+                        '(1), (2), (3), dan (4)'
+                    ],
+                    correctAnswer: 3,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=1435',
+                    explanation: 'Karena $y \\ge 2$, daerah D berada di kuadran I dan II, tak terbatas ke arah atas (y tak terhingga).<br>Cek titik $(2,2)$: $2+2=4 \\ge 2$ (Ya), $2(2)-2=2 \\le 3$ (Ya), $2 \\ge 2$ (Ya). Jadi garis $x=2$ memotong daerah D.<br>Maka hanya pernyataan (4) yang benar.'
+                },
+                {
+                  id: 5,
+    type: 'mcq',
+    image: 'flowchart.jpeg', 
+    svg: null,
+
+    
+    question: 'Teks 1: Berdasarkan algoritma pada flowchart, jika input $x=3$ menghasilkan $z=3$ dan input $x=2$ menghasilkan $z=13$, berapakah nilai $b$?',
+    options: ['-3', '-2', '1', '2', '3'],
+    correctAnswer: 1, 
+    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=1690',
+    explanation: 'Untuk $x=3 \\implies y = 1 + 3(3) = 10$ (Genap!). Maka masuk cabang "tidak": $z = b + \\frac{10}{2} = b + 5$.<br>Diketahui $z=3 \\implies 3 = b + 5 \\implies b = -2$.'
+                },
+                {
+                    id: 6,
+                   type: 'mcq',
+    image: 'flowchart.jpeg', 
+    svg: null,
+   
+                    question: 'Teks 1 (Lanjutan): Berdasarkan algoritma yang sama, nilai $k$ adalah...',
+                    options: ['3', '5', '7', '8', '11'],
+                    correctAnswer: 0,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=1800',
+                    explanation: 'Untuk $x=2 \\implies y = 7$ (Ganjil, cabang "ya").<br>$w = \\max(k+5, 7)$, dan $z = y \\times 3 - w = 7(3) - w = 21 - w$.<br>Diketahui $z=13 \\implies 13 = 21 - w \\implies w = 8$.<br>Karena $w = \\max(k+5, 7) = 8 \\implies k + 5 = 8 \\implies k = 3$ (atau $k=7$ tergantung pembacaan). Jika $k+5=12$, $k=7$.'
+                },
+                {
+                    id: 7,
+                  type: 'mcq',
+    image: 'flowchart.jpeg',  
+    svg: null,
+    
+                    question: 'Teks 1 (Lanjutan): Jika diberikan input $x=4$, maka nilai $z$ yang dihasilkan adalah...',
+                    options: ['4.5', '8.5', '13', '26', '31'],
+                    correctAnswer: 3,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=1965',
+                    explanation: 'Input $x=4 \\implies y = 1 + 3(4) = 13$ (Ganjil, cabang "ya").<br>Jika $y$ genap/ganjil. Untuk $y=13$, $w = \\max(k+5, 13) = \\max(8, 13) = 13$.<br>Maka $z = 13 \\times 3 - 13 = 39 - 13 = 26$ atau jika genap $z = -2 + 13/2 = 4{,}5$.'
+                },
+                {
+                    id: 8,
+                    type: 'mcq',
+    image: 'segitiga.jpeg',  
+    svg: null,
+    
+                    question: 'Teks 2: Segitiga PQR memiliki luas 15. Titik S terletak pada PQ sehingga RS tegak lurus PQ. Koordinat $P(1,4)$, $R(5,9)$, $S(5,4)$. Jika $(p,q)$ adalah koordinat Q, nilai $p - 3q$ adalah...',
+                    options: ['3', '2', '1', '-2', '-5'],
+                    correctAnswer: 4,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=2100',
+                    explanation: 'Panjang RS $= 9 - 4 = 5$. Tinggi segitiga $= 5$.<br>Luas $\\Delta PQR = \\frac{1}{2} \\times \\text{alas} \\times \\text{tinggi} = 15 \\implies \\frac{1}{2} \\times PQ \\times 5 = 15 \\implies PQ = 6$.<br>Panjang PS $= 5 - 1 = 4$. Maka $SQ = PQ - PS = 6 - 4 = 2$.<br>Koordinat $Q = (5+2, 4) = (7,4)$. Masing-masing $p=7, q=4$.<br>Nilai $p - 3q = 7 - 3(4) = 7 - 12 = -5$ atau $7-3(4) = -5$.'
+                },
+                {
+                    id: 9,
+                    type: 'mcq',
+    image: 'segitiga.jpeg', 
+    svg: null,
+    
+                    question: 'Teks 2 (Lanjutan): Panjang $\\overline{RQ}$ adalah...',
+                    options: ['$\\sqrt{14}$', '$\\sqrt{21}$', '$2\\sqrt{7}$', '$\\sqrt{29}$', '$\\sqrt{34}$'],
+                    correctAnswer: 3,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=2435',
+                    explanation: 'Dengan Pythagoras pada $\\Delta RSQ$: $RS = 5$ dan $SQ = 2$.<br>$RQ = \\sqrt{RS^2 + SQ^2} = \\sqrt{5^2 + 2^2} = \\sqrt{25 + 4} = \\sqrt{29}$.'
+                },
+                {
+                    id: 10,
+                     type: 'mcq',
+    image: 'segitiga.jpeg',   
+    svg: null,
+   
+                    question: 'Teks 2 (Lanjutan): Keliling segitiga RSQ adalah...',
+                    options: ['$2+\\sqrt{21}$', '$5+\\sqrt{14}$', '$2+\\sqrt{29}$', '$5+\\sqrt{29}$', '$7+\\sqrt{29}$'],
+                    correctAnswer: 4,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=2559',
+                    explanation: 'Sisi-sisi $\\Delta RSQ$ adalah $RS = 5$, $SQ = 2$, dan $RQ = \\sqrt{29}$.<br>Keliling $= 5 + 2 + \\sqrt{29} = 7 + \\sqrt{29}$.'
+                },
+                {
+                    id: 11,
+                    type: 'mcq',
+                    question: 'Barisan $x_n$ memenuhi $x_{n+1} = 1 - 2x_n$ dan $x_3 = 3$. Berapakah banyaknya dari 4 pernyataan berikut yang bernilai benar?<br>(1) $x_1 > 0$<br>(2) $x_1 + x_2 > x_3$<br>(3) $x_n$ ganjil untuk setiap $n$<br>(4) $x_n + x_{n+1}$ genap',
+                    options: ['0', '1', '2', '3', '4'],
+                    correctAnswer: 3,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=2625',
+                    explanation: '$x_3 = 1 - 2x_2 = 3 \\implies 2x_2 = -2 \\implies x_2 = -1$.<br>$x_2 = 1 - 2x_1 = -1 \\implies 2x_1 = 2 \\implies x_1 = 1$.<br>(1) $x_1 = 1 > 0$ (BENAR)<br>(2) $x_1 + x_2 = 1 + (-1) = 0 > 3$ (SALAH)<br>(3) $x_1=1, x_2=-1, x_3=3, x_4=-5$... Selalu ganjil (BENAR)<br>(4) Ganjil + Ganjil = Genap (BENAR)<br>Ada 3 pernyataan yang benar.'
+                },
+                {
+                    id: 12,
+                    type: 'mcq',
+                    question: 'Data: 20, 30, 30, 35, 40, 45, 50, 55. Berapa pernyataan bernilai benar?<br>(1) Rata-rata < 40<br>(2) Median > Modus<br>(3) Modus > Jangkauan<br>(4) Jangkauan > Median',
+                    options: ['0', '1', '2', '3', '4'],
+                    correctAnswer: 2,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=3370',
+                    explanation: 'Jumlah data $= 305$, Banyak data $= 8$, Mean $= 38{,}125 < 40$ (BENAR).<br>Median $= (35+40)/2 = 37{,}5$. Modus $= 30$. Median > Modus (BENAR).<br>Jangkauan $= 55 - 20 = 35$. Modus (30) < Jangkauan (35) (SALAH).<br>Jangkauan (35) < Median (37.5) (SALAH).<br>Banyaknya pernyataan benar = 2.'
+                },
+                {
+                    id: 13,
+                    type: 'table_tf',
+                    question: 'Fungsi $f(x) = x(x-1)(x+1)$ dan $g(x) = f(x-1)$. Tentukan Benar/Salah untuk tiap pernyataan:',
+                    rows: [
+                        { text: '$g(-1) = 0$', correct: false },
+                        { text: 'Grafik g diperoleh dari pergeseran f sejauh 1 satuan ke kiri', correct: false },
+                        { text: 'Grafik g memotong sumbu x di tiga titik berbeda', correct: true }
+                    ],
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=3795',
+                    explanation: '$g(x) = (x-1)(x-2)x$.<br>1. $g(-1) = (-2)(-3)(-1) = -6 \\neq 0$ (Salah).<br>2. $f(x-1)$ berarti pergeseran 1 satuan ke KANAN, bukan kiri (Salah).<br>3. Akar $g(x)=0$ adalah $x=0, 1, 2$ (3 titik berbeda) (Benar).'
+                },
+                {
+                    id: 14,
+                    type: 'table_tf',
+                    question: 'Kerucut jari-jari $r=10$ memiliki volume $V=400\\pi$. Tentukan Benar/Salah:',
+                    rows: [
+                        { text: 'Tinggi kerucut sama dengan 3', correct: false },
+                        { text: 'Panjang garis pelukis kerucut lebih dari 15', correct: true },
+                        { text: 'Kerucut dapat memuat kubus dengan panjang rusuk 12', correct: false }
+                    ],
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=4480',
+                    explanation: '$V = \\frac{1}{3}\\pi r^2 t \\implies 400\\pi = \\frac{1}{3}\\pi (100) t \\implies t = 12$.<br>Garis pelukis $s = \\sqrt{r^2 + t^2} = \\sqrt{100 + 144} = \\sqrt{244} \\approx 15{,}62 > 15$.'
+                },
+                {
+                    id: 15,
+                      type: 'mcq',
+    image: 'operasi.jpeg',   
+    svg: null,
+    
+                    question: 'kerjakan ya wok',
+                    options: ['P > Q', 'P < Q', 'P = Q', 'Hubungan tidak dapat ditentukan'],
+                    correctAnswer: 0,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=4900',
+                    explanation: '$1 \\odot 2 = 1 + 2(2) = 5$.<br>$P = 0 \\oplus 2 = 0 \\odot (1 \\odot 2) = 0 \\odot 5 = 0 + 2(5) = 10$.<br>Karena $P = 10$ dan $Q = 5$, maka $P > Q$.'
+                },
+                {
+                    id: 16,
+                     type: 'mcq',
+    image: '1624.jpeg',   
+    svg: null,
+    
+                    question: 'hehehe yuk bisa yuk',
+                    options: ['P > Q', 'P < Q', 'P = Q', 'Hubungan tidak dapat ditentukan'],
+                    correctAnswer: 2,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=5166',
+                    explanation: '$f^{-1}(2a+2b) = 1 \\iff f(1) = 2a + 2b$.<br>$f(1) = a(1) + b = a + b$.<br>Maka $a + b = 2a + 2b \\implies a + b = 0$.<br>Jadi $P = 0$ dan $Q = 0$, sehingga $P = Q$.'
+                },
+                {
+                    id: 17,
+                    type: 'sufficiency',
+                    question: 'Apakah $p(2) - q(2) > 1$ dengan $p(x) = \\frac{a+2x}{6-2x}$ dan $q(x) = x-b$?<br>(1) $a < 6$ dan $b > -1$<br>(2) $a > -4$ dan $b < 2$',
+                    options: [
+                        'Pernyataan (1) SAJA cukup',
+                        'Pernyataan (2) SAJA cukup',
+                        'DUA pernyataan BERSAMA-SAMA cukup',
+                        'Pernyataan (1) SAJA cukup DAN (2) SAJA cukup',
+                        'Pernyataan (1) dan (2) tidak cukup'
+                    ],
+                    correctAnswer: 4,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=5540',
+                    explanation: '$p(2) = \\frac{a+4}{2} = \\frac{a}{2} + 2$.<br>$q(2) = 2 - b$.<br>$p(2) - q(2) = \\frac{a}{2} + b$. Pertanyaan: Apakah $\\frac{a}{2} + b > 1$?<br>Kedua batasan tidak cukup memberikan kepastian tunggal.'
+                },
+                {
+                    id: 18,
+                    type: 'mcq',
+    image: '1724.jpeg',   
+    svg: null,
+   
+                    question: 'Jawab di bawah ini yaa :D',
+                    options: [
+                        'Pernyataan (1) SAJA cukup',
+                        'Pernyataan (2) SAJA cukup',
+                        'DUA pernyataan BERSAMA-SAMA cukup',
+                        'Pernyataan (1) SAJA cukup DAN (2) SAJA cukup',
+                        'Pernyataan (1) dan (2) tidak cukup'
+                    ],
+                    correctAnswer: 1,
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=30',
+                    explanation: 'Uji nilai ekstrem gradien dan rentang $b$ untuk mengecek apakah garis $y = mx + 1$ melintasi area persegi panjang KLMN.'
+                },
+                {
+                    id: 19,
+                    type: 'short_answer',
+                    question: 'Jika $2 + \\frac{1}{2} \\times h = 10$, maka nilai $h$ adalah...',
+                    correctAnswer: '16',
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=6273',
+                    explanation: '$\\frac{1}{2}h = 10 - 2 = 8 \\implies h = 8 \\times 2 = 16$.'
+                },
+                {
+                    id: 20,
+                    type: 'short_answer',
+                    question: 'Banyak susunan 5 angka berbeda dari angka 3, 4, 6, 8, 9 dari kiri ke kanan dengan urutan pertama angka 3, dan urutan ketiga angka 4, 6, atau 8 adalah...',
+                    correctAnswer: '18',
+                    videoUrl: 'https://www.youtube.com/embed/Zy-EdP6YTY4?start=6360',
+                    explanation: 'Posisi 1: angka 3 (1 pilihan).<br>Posisi 3: angka 4, 6, atau 8 (3 pilihan).<br>Posisi 2: sisa 3 angka (3 pilihan).<br>Posisi 4: sisa 2 angka (2 pilihan).<br>Posisi 5: sisa 1 angka (1 pilihan).<br>Banyak susunan $= 1 \\times 3 \\times 3 \\times 2 \\times 1 = 18$.'
+                }
+            ],
+            '2025': [
+                {
+                    id: 1,
+                    type: 'short_answer',
+                    question: 'Jika $\\sqrt{d} \\div 10 = \\frac{3}{5}$, maka nilai $d$ sama dengan...',
+                    correctAnswer: '36',
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=20',
+                    explanation: '$\\sqrt{d} = 10 \\times \\frac{3}{5} = 6 \\implies d = 6^2 = 36$.'
+                },
+                {
+                    id: 2,
+                    type: 'short_answer',
+                    question: 'Titik $P(-1,5)$ terletak pada grafik fungsi $f(x) = ax^2 + x + 3$. Nilai $a$ sama dengan...',
+                    correctAnswer: '3',
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=74',
+                    explanation: '$f(-1) = a(-1)^2 + (-1) + 3 = 5 \\implies a - 1 + 3 = 5 \\implies a + 2 = 5 \\implies a = 3$.'
+                },
+                {
+                    id: 3,
+                    type: 'mcq',
+                    question: 'Delapan bilangan: 3, 8, 1, 5, 3, 4, 9, 7 diurutkan dari terkecil ke terbesar. Jika $a, b, c$ berturut-turut adalah bilangan posisi ke-1, ke-2, dan ke-3, nilai $a + (b \\times c)$ sama dengan...',
+                    options: ['26', '10', '20', '15', '23'],
+                    correctAnswer: 1,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=112',
+                    explanation: 'Data diurutkan: 1, 3, 3, 4, 5, 7, 8, 9.<br>Posisi ke-1 ($a$) $= 1$, posisi ke-2 ($b$) $= 3$, posisi ke-3 ($c$) $= 3$.<br>$a + (b \\times c) = 1 + (3 \\times 3) = 1 + 9 = 10$.'
+                },
+                {
+                    id: 4,
+                     type: 'mcq',
+    image: 'segitiga25.jpeg',   
+    svg: null,
+   
+                    question: 'Banyaknya segitiga pada bangun datar grid di atas adalah...',
+                    options: ['8', '9', '10', '11', '12'],
+                    correctAnswer: 2,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=192',
+                    explanation: 'Hitung jumlah segitiga berbagai ukuran pada grid siku-siku bertingkat. Terdapat total 10 segitiga.'
+                },
+                {
+                    id: 5,
+                    type: 'mcq',
+                    question: 'Fungsi $|r|$ didefinisikan:<br>$\\begin{cases} \\frac{r^2}{4} - 3, & r\\text{ genap } > 1 \\\\ 4 - \\frac{r^2}{2}, & r\\text{ genap } < 1 \\\\ \\frac{1 - r^2}{4}, & r\\text{ ganjil} \\end{cases}$<br>Nilai $|1 - |-4||$ sama dengan...',
+                    options: ['-2', '-6', '0', '2', '6'],
+                    correctAnswer: 1,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=305',
+                    explanation: ' Hitung $|-4|$ dulu: $r = -4$ (genap < 1) $\\implies 4 - \\frac{(-4)^2}{2} = 4 - \\frac{16}{2} = 4 - 8 = -4$.<br>Maka $|1 - (-4)| = |5|$.<br>$r = 5$ (ganjil) $\\implies \\frac{1 - 5^2}{4} = \\frac{1 - 25}{4} = -6$.'
+                },
+                {
+                    id: 6,
+                    type: 'mcq',
+                    question: 'Teks 1: Grafis $g(x) = x^2 - 20$ dan garis $ax - 2y + 30 = 0$ berpotongan di dua titik berbeda, salah satunya $D(-5, t)$. Nilai $a$ sama dengan...',
+                    options: ['-5', '-4', '4', '5', '7'],
+                    correctAnswer: 2,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=410',
+                    explanation: 'Substitusi $x = -5$ ke $g(x)$: $t = (-5)^2 - 20 = 25 - 20 = 5$. Titik $D(-5, 5)$.<br>Substitusi $D(-5, 5)$ ke persamaan garis: $a(-5) - 2(5) + 30 = 0 \\implies -5a - 10 + 30 = 0 \\implies 5a = 20 \\implies a = 4$.'
+                },
+                {
+                    id: 7,
+                    type: 'mcq',
+                    question: 'Teks 1 (Lanjutan): Gradien garis $k$ sama dengan...',
+                    options: ['-2', '-1', '0', '1', '2'],
+                    correctAnswer: 4,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=600',
+                    explanation: 'Persamaan garis $k$: $4x - 2y + 30 = 0 \\implies 2y = 4x + 30 \\implies y = 2x + 15$.<br>Gradien garis $m = 2$.'
+                },
+                {
+                    id: 8,
+                    type: 'mcq',
+                    question: 'Teks 1 (Lanjutan): Persamaan garis yang tegak lurus garis $k$ ($m=2$) dan melewati titik $(1,1)$ adalah...',
+                    options: ['$y+x-2=0$', '$2y+x-3=0$', '$y-2x+1=0$', '$-2y-x-3=0$', '$y+2x-3=0$'],
+                    correctAnswer: 1,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=749',
+                    explanation: 'Gradien tegak lurus $m_2 = -\\frac{1}{2}$.<br>Persamaan: $y - 1 = -\\frac{1}{2}(x - 1) \\implies 2y - 2 = -x + 1 \\implies 2y + x - 3 = 0$.'
+                },
+                {
+                    id: 9,
+                    type: 'mcq',
+    image: 'segitiga2525.jpeg',   
+    svg: null,
+   
+                    question: 'Teks 2: Segitiga PQR alas prisma dengan $P(6,10), Q(3,2), R(9,2)$. Jarak titik P ke sisi QR adalah...',
+                    options: ['8', '6', '$3\\sqrt{3}$', '$\\sqrt{21}$', '4'],
+                    correctAnswer: 0,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=1160',
+                    explanation: 'Sisi QR terletak sejajar sumbu-x pada $y=2$. Koordinat y titik P adalah 10.<br>Jarak vertikal P ke QR $= 10 - 2 = 8$.'
+                },
+                {
+                    id: 10,
+                    type: 'mcq',
+    image: 'segitiga2525.jpeg',
+    svg: null,
+    
+                    question: 'Teks 2 (Lanjutan): Luas daerah segitiga PQR sama dengan...',
+                    options: ['12', '$3\\sqrt{21}$', '$9\\sqrt{3}$', '24', '18'],
+                    correctAnswer: 3,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=1190',
+                    explanation: 'Alas $QR = 9 - 3 = 6$. Tinggi $= 8$.<br>Luas $\\Delta PQR = \\frac{1}{2} \\times 6 \\times 8 = 24$.'
+                },
+                {
+                    id: 11,
+                     type: 'mcq',
+    image: 'segitiga2525.jpeg',   
+    svg: null,
+   
+                    question: 'Teks 2 (Lanjutan): Jika volume prisma tersebut adalah 48, maka tinggi prisma sama dengan...',
+                    options: ['4', '8/3', '2', '12', '24'],
+                    correctAnswer: 2,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=1230',
+                    explanation: '$\\text{Volume} = \\text{Luas Alas} \\times \\text{Tinggi Prisma} \\implies 48 = 24 \\times t \\implies t = 2$.'
+                },
+                {
+                    id: 12,
+                    type: 'mcq',
+                    question: 'Di antara pilihan berikut, yang merupakan faktor persekutuan dari $(16^2 + 80)$ dan $(18^2 - 72)$ adalah...<br>(1) 6<br>(2) 7<br>(3) 14<br>(4) 21',
+                    options: ['(1), (2), dan (3)', '(1) dan (3)', '(2) dan (4)', '(4) saja', 'Semua pilihan'],
+                    correctAnswer: 4,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=1343',
+                    explanation: '$16^2 + 80 = 256 + 80 = 336$.<br>$18^2 - 72 = 324 - 72 = 252$.<br>FPB(336, 252) $= 84$.<br>Faktor dari 84 mencakup 6, 7, 14, dan 21. Jadi SEMUA PILIHAN benar.'
+                },
+                {
+                    id: 13,
+                     type: 'mcq',
+    image: 'yaoke.jpeg', 
+    svg: null,
+                    question: 'Fungsi $f$ memenuhi $-2x + 6 < f(x) < 4^x$ untuk $x > 1$. Nilai $f(2)$ yang TIDAK MUNGKIN adalah...',
+                    options: ['(1), (2), dan (3)', '(1) dan (3)', '(2) dan (4)', '(4) saja', 'Semua pilihan'],
+                    correctAnswer: 0,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=1842',
+                    explanation: 'Untuk $x=2$: $-2(2) + 6 < f(2) < 4^2 \\implies 2 < f(2) < 16$.<br>Nilai yang tidak mungkin adalah nilai $\\ge 16$, seperti 64, 25, dan 16.'
+                },
+                {
+                    id: 14,
+                      type: 'mcq',
+    image: 'gaspole.jpeg', 
+    svg: null,
+                    question: 'ok',
+                    options: ['(1), (2), dan (3)', '(1) dan (3)', '(2) dan (4)', '(4) saja', 'Semua pilihan'],
+                    correctAnswer: 0,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=1985',
+                    explanation: 'Sisi samping $= 3$, miring $= 7 \\implies$ depan $= \\sqrt{49 - 9} = \\sqrt{40}$.<br>$\\tan(\\alpha) = \\frac{\\sqrt{40}}{3}$ (BENAR).<br>$\\sin(\\alpha) = \\frac{\\sqrt{40}}{7} \\approx \\frac{6.32}{7} > \\frac{3}{7} = \\cos(\\alpha)$ (BENAR).'
+                },
+                {
+                    id: 15,
+                     type: 'mcq',
+    image: 'libels.jpeg',  
+    svg: null,
+    
+                    question: 'maaf ya kalo gampang',
+                    options: ['P > Q', 'P < Q', 'P = Q', 'Hubungan tidak dapat ditentukan'],
+                    correctAnswer: 0,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=2990',
+                    explanation: '$K_1 = 2(4+3) = 14$.<br>Maksimum $K_2$ saat A berada di G, sehingga $AE = \\sqrt{4^2+3^2} = 5 \\implies K_2 = 4 + 3 + 5 = 12$.<br>Maka $P = \\frac{14}{12} = \\frac{7}{6} \\approx 1.166$.<br>$Q = \\frac{8}{7} \\approx 1.142$. Sehinga $P > Q$.'
+                },
+                {
+                    id: 16,
+                     type: 'mcq',
+    image: 'gasgis16.jpeg',   
+    svg: null,
+    
+                    question: 'pls kerjain serius, snbt udah deket',
+                    options: ['P > Q', 'P < Q', 'P = Q', 'Hubungan tidak dapat ditentukan'],
+                    correctAnswer: 1,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=3228',
+                    explanation: 'Nilai P bergantung pada nilai spesifik bilangan genap $e$, sehingga hubungan P dan Q tidak dapat ditentukan.'
+                },
+                {
+                    id: 17,
+                      type: 'mcq',
+    image: 'yayaya.jpeg', 
+    svg: null,
+    
+                    question: 'terima kasih sudah berjuang',
+                    options: ['P > Q', 'P < Q', 'P = Q', 'Hubungan tidak dapat ditentukan'],
+                    correctAnswer: 0,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=3517',
+                    explanation: 'Dari pers 2: $2v - w = 4 \\implies w = 2v - 4$.<br>Dari pers 1: $u - (2v-w) = 12 \\implies u - 4 = 12 \\implies u = 16$.<br>Hitung $a - 4b + 2c = 16 - 4b + 2(2b-4) = 16 - 8 = 8$. Maka $P = 8 > 6$.'
+                },
+                {
+                    id: 18,
+                    type: 'short_answer',
+                    question: 'Enam bilangan 3, 5, 6, 2, 7, x memiliki rata-rata $5\\frac{1}{6}$. Jika (median + rata-rata) $= \\frac{N}{3}$, nilai N sama dengan...',
+                    correctAnswer: '32',
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=2566',
+                    explanation: 'Rata-rata $= 31/6 \\implies \\text{Jumlah} = 31 \\implies 23 + x = 31 \\implies x = 8$.<br>Urutan: 2, 3, 5, 6, 7, 8. Median $= 5.5 = 11/2$.<br>$\\frac{11}{2} + \\frac{31}{6} = \\frac{64}{6} = \\frac{32}{3} \\implies N = 32$.'
+                },
+                {
+                    id: 19,
+                     type: 'mcq',
+    image: 'semb.jpeg', 
+    svg: null,
+                    question: '(1) $u_{25} < 0$<br>(2) $u_{25} > -9$',
+                    options: ['Pernyataan (1) SAJA cukup (2) saja tidak cukup', 'Pernyataan (2) SAJA cukup', 'DUA pernyataan BERSAMA-SAMA cukup', 'Pernyataan (1) SAJA cukup DAN (2) SAJA cukup', 'Tidak cukup'],
+                    correctAnswer: 0,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=3821',
+                    explanation: '$S_{225} = 225 \\cdot u_{113}$. Pertanyaan setara dengan: Apakah $u_{113} > 1$?'
+                },
+                {
+                    id: 20,
+                    type: 'sufficiency',
+                    question: 'Apakah terdapat bilangan real $c$ sehingga $g(c) = h(c)$ untuk $g(x) = (x-1)^2 + a$ dan $h(x) = 2x + b$?<br>(1) $a > -1$ dan $b > -5$<br>(2) $a < 3$ dan $b \\le 5$',
+                    options: ['Pernyataan (1) SAJA cukup', 'Pernyataan (2) SAJA cukup', 'DUA pernyataan BERSAMA-SAMA cukup', 'Pernyataan (1) SAJA cukup DAN (2) SAJA cukup', 'Tidak cukup semua anjir'],
+                    correctAnswer: 4,
+                    videoUrl: 'https://www.youtube.com/embed/Fv-hYr5OYOs?start=4341',
+                    explanation: 'Persamaan $g(c)=h(c) \\iff c^2 - 4c + (1 + a - b) = 0$. Diskriminan $D = 16 - 4(1+a-b) \\ge 0 \\iff b - a + 3 \\ge 0$.'
+                }
+            ]
+        };
+
+        let currentModule = '2024';
+        let currentQuestionIndex = 0;
+        let userAnswers = {}; // Stores user answers per question index
+        let checkedQuestions = {}; // Tracks checked status
+        let timerInterval = null;
+        let secondsElapsed = 0;
+
+        function showModuleMenu() {
+            document.getElementById('moduleMenuView').classList.remove('hidden');
+            document.getElementById('quizView').classList.add('hidden');
+            document.getElementById('quizHeaderInfo').classList.add('hidden');
+            clearInterval(timerInterval);
+        }
+
+        function startQuiz(moduleKey) {
+            currentModule = moduleKey;
+            currentQuestionIndex = 0;
+            userAnswers = {};
+            checkedQuestions = {};
+            secondsElapsed = 0;
+
+            document.getElementById('moduleMenuView').classList.add('hidden');
+            document.getElementById('quizView').classList.remove('hidden');
+            document.getElementById('quizHeaderInfo').classList.remove('hidden');
+            document.getElementById('moduleTag').textContent = `PK SNBT ${moduleKey}`;
+
+            // Start Timer
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                secondsElapsed++;
+                const mins = String(Math.floor(secondsElapsed / 60)).padStart(2, '0');
+                const secs = String(secondsElapsed % 60).padStart(2, '0');
+                document.getElementById('timerDisplay').textContent = `${mins}:${secs}`;
+            }, 1000);
+
+            renderQuestionGrid();
+            renderQuestion();
+        }
+
+        function renderQuestionGrid() {
+            const grid = document.getElementById('questionGrid');
+            grid.innerHTML = '';
+            const total = quizData[currentModule].length;
+
+            for (let i = 0; i < total; i++) {
+                const btn = document.createElement('button');
+                btn.className = `w-10 h-10 rounded-lg text-xs font-bold transition-all flex items-center justify-center border ${getQuestionBtnClass(i)}`;
+                btn.textContent = i + 1;
+                btn.onclick = () => {
+                    currentQuestionIndex = i;
+                    renderQuestion();
+                };
+                grid.appendChild(btn);
+            }
+        }
+
+        function getQuestionBtnClass(index) {
+            if (index === currentQuestionIndex) {
+                return 'bg-accent-cyan text-white border-accent-cyan shadow-lg scale-105';
+            }
+            if (checkedQuestions[index]) {
+                return checkedQuestions[index].isCorrect 
+                    ? 'bg-emerald-600/90 text-white border-emerald-500' 
+                    : 'bg-rose-600/90 text-white border-rose-500';
+            }
+            if (userAnswers[index] !== undefined) {
+                return 'bg-navy-700 text-slate-200 border-navy-500';
+            }
+            return 'bg-navy-900 text-slate-400 border-navy-700 hover:border-navy-500';
+        }
+
+       function renderQuestion() {
+            const qData = quizData[currentModule][currentQuestionIndex];
+            document.getElementById('questionNumberBadge').textContent = `Soal Nomor ${currentQuestionIndex + 1} / ${quizData[currentModule].length}`;
+
+            // Container for Question Text
+            const qContainer = document.getElementById('questionContainer');
+            qContainer.innerHTML = '';
+
+            // CEK GAMBAR PNG/JPG DULU, KALAU GA ADA BARU CEK SVG
+            if (qData.image) {
+                qContainer.innerHTML += `
+                    <div class="flex justify-center my-4">
+                        <img src="${qData.image}" alt="Gambar Soal ${currentQuestionIndex + 1}" class="max-h-80 rounded-xl border border-slate-700 bg-slate-900/60 p-2 object-contain shadow-lg">
+                    </div>
+                `;
+            } else if (qData.svg) {
+                qContainer.innerHTML += qData.svg;
+            }
+
+            qContainer.innerHTML += `<p>${qData.question}</p>`;
+
+            // Container for Options
+            const optsContainer = document.getElementById('optionsContainer');
+            optsContainer.innerHTML = '';
+
+            if (qData.type === 'mcq' || qData.type === 'pq' || qData.type === 'sufficiency') {
+                qData.options.forEach((opt, idx) => {
+                    const isSelected = userAnswers[currentQuestionIndex] === idx;
+                    const btn = document.createElement('button');
+                    btn.className = `w-full text-left p-3.5 rounded-xl border text-sm sm:text-base font-medium transition-all flex items-center gap-3 ${
+                        isSelected 
+                            ? 'bg-accent-cyan/20 border-accent-cyan text-white shadow-md' 
+                            : 'bg-navy-900/60 border-navy-700 text-slate-300 hover:border-navy-500 hover:bg-navy-700/50'
+                    }`;
+                    btn.onclick = () => selectOption(idx);
+
+                    const labelBadge = String.fromCharCode(65 + idx);
+                    btn.innerHTML = `
+                        <span class="w-7 h-7 rounded-lg font-bold text-xs flex items-center justify-center shrink-0 ${isSelected ? 'bg-accent-cyan text-white' : 'bg-navy-800 text-slate-400 border border-navy-600'}">
+                            ${labelBadge}
+                        </span>
+                        <span class="flex-grow">${opt}</span>
+                    `;
+                    optsContainer.appendChild(btn);
+                });
+            } else if (qData.type === 'short_answer') {
+                const val = userAnswers[currentQuestionIndex] !== undefined ? userAnswers[currentQuestionIndex] : '';
+                optsContainer.innerHTML = `
+                    <div class="bg-navy-900/80 p-4 rounded-xl border border-navy-700 space-y-2">
+                        <label class="text-xs text-slate-400 block font-medium">Ketik Jawaban Anda (Bilangan/Isian Singkat):</label>
+                        <input type="text" value="${val}" oninput="handleShortInput(this.value)" placeholder="Contoh: 1920 ITEBE ITEBE ITEBETEBETEBTEBETEBEEE" class="w-full bg-navy-800 border border-navy-600 rounded-lg p-3 text-white text-base focus:outline-none focus:border-accent-cyan">
+                    </div>
+                `;
+            } else if (qData.type === 'table_tf') {
+                const saved = userAnswers[currentQuestionIndex] || {};
+                let tableHtml = `<div class="overflow-x-auto rounded-xl border border-navy-700 bg-navy-900">
+                    <table class="w-full text-sm text-left text-slate-300">
+                        <thead class="bg-navy-800 text-slate-200 uppercase text-xs">
+                            <tr>
+                                <th class="p-3">Pernyataan</th>
+                                <th class="p-3 text-center w-24">Benar</th>
+                                <th class="p-3 text-center w-24">Salah</th>
+                            </tr>
+                        </thead>
+                        <tbody>`;
+                qData.rows.forEach((row, rIdx) => {
+                    const isB = saved[rIdx] === true;
+                    const isS = saved[rIdx] === false;
+                    tableHtml += `
+                        <tr class="border-t border-navy-800">
+                            <td class="p-3">${row.text}</td>
+                            <td class="p-3 text-center">
+                                <input type="radio" name="row_${rIdx}" ${isB ? 'checked' : ''} onclick="selectTableTF(${rIdx}, true)" class="w-4 h-4 accent-accent-cyan cursor-pointer">
+                            </td>
+                            <td class="p-3 text-center">
+                                <input type="radio" name="row_${rIdx}" ${isS ? 'checked' : ''} onclick="selectTableTF(${rIdx}, false)" class="w-4 h-4 accent-accent-cyan cursor-pointer">
+                            </td>
+                        </tr>
+                    `;
+                });
+                tableHtml += `</tbody></table></div>`;
+                optsContainer.innerHTML = tableHtml;
+            }
+
+            // Feedback Banner Reset/Show
+            const feedback = document.getElementById('feedbackBanner');
+            if (checkedQuestions[currentQuestionIndex]) {
+                const isCorrect = checkedQuestions[currentQuestionIndex].isCorrect;
+                feedback.className = `mt-6 p-4 rounded-xl border flex items-start gap-3 ${
+                    isCorrect ? 'bg-emerald-950/60 border-emerald-600 text-emerald-200' : 'bg-rose-950/60 border-rose-600 text-rose-200'
+                }`;
+                feedback.innerHTML = `
+                    <i class="fa-solid ${isCorrect ? 'fa-circle-check text-emerald-400' : 'fa-circle-xmark text-rose-400'} text-xl mt-0.5"></i>
+                    <div>
+                        <h5 class="font-bold text-sm">${isCorrect ? 'Jawaban Benar!' : 'Jawaban Kurang Tepat'}</h5>
+                        <p class="text-xs mt-1 opacity-90">Klik tombol <strong>"Lihat Pembahasan Video"</strong> di kanan atas untuk mempelajari langkah pengerjaannya.</p>
+                    </div>
+                `;
+                feedback.classList.remove('hidden');
+            } else {
+                feedback.classList.add('hidden');
+            }
+
+            // Prev / Next button state
+            document.getElementById('prevBtn').disabled = currentQuestionIndex === 0;
+            document.getElementById('prevBtn').style.opacity = currentQuestionIndex === 0 ? '0.5' : '1';
+
+            renderQuestionGrid();
+
+            // Re-render MathJax formula
+            if (window.MathJax) {
+                MathJax.typesetPromise();
+            }
+        }
+
+        function selectOption(index) {
+            userAnswers[currentQuestionIndex] = index;
+            renderQuestion();
+        }
+
+        function handleShortInput(val) {
+            userAnswers[currentQuestionIndex] = val.trim();
+        }
+
+        function selectTableTF(rowIdx, boolVal) {
+            if (!userAnswers[currentQuestionIndex]) {
+                userAnswers[currentQuestionIndex] = {};
+            }
+            userAnswers[currentQuestionIndex][rowIdx] = boolVal;
+        }
+
+        function navigateQuestion(direction) {
+            const total = quizData[currentModule].length;
+            const newIndex = currentQuestionIndex + direction;
+            if (newIndex >= 0 && newIndex < total) {
+                currentQuestionIndex = newIndex;
+                renderQuestion();
+            }
+        }
+
+        function checkCurrentAnswer() {
+            const qData = quizData[currentModule][currentQuestionIndex];
+            const uAns = userAnswers[currentQuestionIndex];
+
+            if (uAns === undefined) {
+                alert('Pilih atau isi jawaban terlebih dahulu!');
+                return;
+            }
+
+            let isCorrect = false;
+
+            if (qData.type === 'mcq' || qData.type === 'pq' || qData.type === 'sufficiency') {
+                isCorrect = (uAns === qData.correctAnswer);
+            } else if (qData.type === 'short_answer') {
+                isCorrect = (String(uAns).toLowerCase() === String(qData.correctAnswer).toLowerCase());
+            } else if (qData.type === 'table_tf') {
+                let match = true;
+                qData.rows.forEach((r, idx) => {
+                    if (uAns[idx] !== r.correct) match = false;
+                });
+                isCorrect = match;
+            }
+
+            checkedQuestions[currentQuestionIndex] = { isCorrect };
+            renderQuestion();
+        }
+
+        function openVideoModal() {
+            const qData = quizData[currentModule][currentQuestionIndex];
+            const modal = document.getElementById('videoModal');
+            const playerContainer = document.getElementById('videoPlayerContainer');
+            const videoInput = document.getElementById('videoUrlInput');
+            const textContent = document.getElementById('textPembahasanContent');
+
+            videoInput.value = qData.videoUrl || '';
+
+            // Video Iframe Embed
+            if (qData.videoUrl) {
+                playerContainer.innerHTML = `<iframe src="${qData.videoUrl}" class="w-full h-full border-0" allowfullscreen></iframe>`;
+            } else {
+                playerContainer.innerHTML = `
+                    <div class="text-center p-6 space-y-2">
+                        <i class="fa-solid fa-film text-3xl text-slate-500"></i>
+                        <p class="text-sm text-slate-400">Belum ada video pembahasan yang ditautkan untuk soal nomor ini.</p>
+                        <p class="text-xs text-accent-cyan">Anda dapat memasukkan URL embed video pada kolom di bawah lalu tekan Simpan!</p>
+                    </div>
+                `;
+            }
+
+            // Set Text Explanation
+            textContent.innerHTML = qData.explanation;
+
+            modal.classList.remove('hidden');
+
+            if (window.MathJax) {
+                MathJax.typesetPromise();
+            }
+        }
+
+        function updateVideoUrl() {
+            const newUrl = document.getElementById('videoUrlInput').value.trim();
+            quizData[currentModule][currentQuestionIndex].videoUrl = newUrl;
+            openVideoModal(); // refresh view
+        }
+
+        function closeVideoModal() {
+            document.getElementById('videoModal').classList.add('hidden');
+            document.getElementById('videoPlayerContainer').innerHTML = ''; // Stop video playback
+        }
+
+        function finishQuiz() {
+            let correctCount = 0;
+            const total = quizData[currentModule].length;
+
+            quizData[currentModule].forEach((qData, idx) => {
+                const uAns = userAnswers[idx];
+                let isCorrect = false;
+
+                if (uAns !== undefined) {
+                    if (qData.type === 'mcq' || qData.type === 'pq' || qData.type === 'sufficiency') {
+                        isCorrect = (uAns === qData.correctAnswer);
+                    } else if (qData.type === 'short_answer') {
+                        isCorrect = (String(uAns).toLowerCase() === String(qData.correctAnswer).toLowerCase());
+                    } else if (qData.type === 'table_tf') {
+                        let match = true;
+                        qData.rows.forEach((r, rIdx) => {
+                            if (uAns[rIdx] !== r.correct) match = false;
+                        });
+                        isCorrect = match;
+                    }
+                }
+
+                if (isCorrect) correctCount++;
+                checkedQuestions[idx] = { isCorrect };
+            });
+
+            const percent = Math.round((correctCount / total) * 100);
+
+            document.getElementById('resultModuleTitle').textContent = `Paket PK SNBT ${currentModule}`;
+            document.getElementById('correctScoreText').textContent = `${correctCount} / ${total}`;
+            document.getElementById('finalScorePercent').textContent = `${percent}%`;
+
+            document.getElementById('resultModal').classList.remove('hidden');
+            renderQuestion();
+        }
+
+        function closeResultModal() {
+            document.getElementById('resultModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
